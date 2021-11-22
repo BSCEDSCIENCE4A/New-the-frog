@@ -1,7 +1,5 @@
 import THREE from "../three";
 
-import frogAnatomy from "https://firebasestorage.googleapis.com/v0/b/thefrog-1344d.appspot.com/o/3D%2Ffrog_nervous_web_internal_v2_06.fbx";
-
 import { anatomyConfig, partNames } from "../anatomy_config";
 
 class SceneSubject {
@@ -17,24 +15,31 @@ class SceneSubject {
     this.createMesh();
   }
   createMesh() {
-    new THREE.FBXLoader(this.manager).load(frogAnatomy, object => {
+    const frogAnatomy =
+      "https://firebasestorage.googleapis.com/v0/b/thefrog-1344d.appspot.com/o/3D%2Ffrog_nervous_web_internal_v2_06.fbx?alt=media&token=c80e0115-f7c5-4cdb-b085-a7d740063073";
+
+    var loader = new THREE.FBXLoader(this.manager);
+    loader.setCrossOrigin("anonymous");
+
+    loader.load(frogAnatomy, (object) => {
       this.mesh = object;
       this.mesh.position.y = -0.7;
       this.mesh.scale.set(0.02, 0.02, 0.02);
       this.scene.add(this.mesh);
-      this.mesh.traverse(child => {
+      this.mesh.traverse((child) => {
         if (child.isMesh) {
           child.displayName = partNames[child.name];
           this.intersectingPart.push(child);
         }
       });
     });
+    
   }
   createRotatingDisk() {
     var geometry = new THREE.CylinderGeometry(1.3, 1.3, 0.03, 64);
     var material = new THREE.MeshPhongMaterial({
       color: 0x2a2a2a,
-      shininess: 100
+      shininess: 100,
     });
     this.groundMirror = new THREE.Mesh(geometry, material);
     this.groundMirror.name = "RotatingDisk";
@@ -45,13 +50,13 @@ class SceneSubject {
     if (this.mesh !== null) {
       this.intersectingPart = [];
       let selectName = [];
-      Object.keys(humanSystem).map(organ => {
-        anatomyConfig.map(org => {
+      Object.keys(humanSystem).map((organ) => {
+        anatomyConfig.map((org) => {
           if (org.id === organ) {
             selectName = org.asName;
           }
         });
-        selectName.map(selected => {
+        selectName.map((selected) => {
           const selectedObject = this.scene.getObjectByName(selected);
           if (selectedObject !== undefined) {
             if (selectedObject.name === "frog_skin") {
@@ -68,7 +73,7 @@ class SceneSubject {
           }
         });
       });
-      this.mesh.traverse(child => {
+      this.mesh.traverse((child) => {
         if (child.isMesh && child.visible && !child.material.transparent) {
           this.intersectingPart.push(child);
         }

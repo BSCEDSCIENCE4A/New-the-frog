@@ -1,7 +1,5 @@
-
-const theme = (isDarkMode) => ({
+const theme = () => ({
     palette: {
-        mode: isDarkMode ? 'dark' : 'light',
         primary: {
             main: '#3f51b5',
         },

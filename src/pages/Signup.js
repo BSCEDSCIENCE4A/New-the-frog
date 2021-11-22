@@ -75,6 +75,7 @@ const classes = {
 export default function Register() {
 
     const [payload, setPayload] = useState({
+        email: '',
         password: '',
         confirmPass: '',
         showPassword: false,
@@ -115,7 +116,7 @@ export default function Register() {
           alert("Password not match");
         } else {
             const auth = getAuth();
-            createUserWithEmailAndPassword(auth, payload.email, payload.password, payload.confPassword)
+            createUserWithEmailAndPassword(auth, payload.email, payload.password, payload.confirmPass)
               .then((userCredential) => {
                 // Signed in 
                 const user = userCredential.user;

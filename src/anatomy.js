@@ -4,7 +4,7 @@ import ThreeJsCanvas from "./components/threejs_canvas";
 export default function Anatomy() {
   return (
     <div className={"common-container anatomy-container col-md-12"}>
-      <ThreeJsCanvas />
+      <ThreeJsCanvas  orientation="landscape"/>
     </div>
   )
 }
