@@ -1,6 +1,6 @@
 import THREE from "../three";
 
-import frogAnatomy from "../../media/models/frog_nervous_web_internal_v2_06.fbx";
+import frogAnatomy from "https://firebasestorage.googleapis.com/v0/b/thefrog-1344d.appspot.com/o/3D%2Ffrog_nervous_web_internal_v2_06.fbx";
 
 import { anatomyConfig, partNames } from "../anatomy_config";
 
