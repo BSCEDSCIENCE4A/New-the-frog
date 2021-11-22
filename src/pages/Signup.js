@@ -75,9 +75,9 @@ const classes = {
 export default function Register() {
 
     const [payload, setPayload] = useState({
-        email: '',
         password: '',
-        confirmPass: '',
+        confirmPassword: '',
+        email: '',
         showPassword: false,
         showCPassword: false,
     });
@@ -110,13 +110,13 @@ export default function Register() {
 
     const signup = (e) => {
         e.preventDefault();
-        if (!payload.email || !payload.password || !payload.confirmPass) {
+        if (!payload.email || !payload.password || !payload.confirmPassword) {
           alert("Please fill all the fields");
-        } else if (payload.password !== payload.confirmPass) {
+        } else if (payload.password !== payload.confirmPassword) {
           alert("Password not match");
         } else {
             const auth = getAuth();
-            createUserWithEmailAndPassword(auth, payload.email, payload.password, payload.confirmPass)
+            createUserWithEmailAndPassword(auth, payload.email, payload.password, payload.confirmPassword)
               .then((userCredential) => {
                 // Signed in 
                 const user = userCredential.user;
@@ -141,7 +141,7 @@ export default function Register() {
 
                 <Divider sx={classes.myDivider}></Divider>
                 <TextField sx={{ ...classes.myTextField, }}
-                    label="Email" color="secondary" />
+                    label="Email" color="secondary"   value={payload.email}/>
 
                 <FormControl sx={classes.myTextField} variant="outlined" color='secondary' >
                     <InputLabel htmlFor="outlined-adornment-password">Password</InputLabel>
@@ -171,7 +171,7 @@ export default function Register() {
                     <OutlinedInput
                         id="outlined-adornment-password"
                         type={payload.showCPassword ? 'text' : 'password'}
-                        value={payload.confirmPass}
+                        value={payload.confirmPassword}
                         onChange={handleChange('confirmPass')}
                         endAdornment={
                             <InputAdornment position="end">
