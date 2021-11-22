@@ -141,7 +141,7 @@ export default function Register() {
 
                 <Divider sx={classes.myDivider}></Divider>
                 <TextField sx={{ ...classes.myTextField, }}
-                    label="Email" color="secondary"   value={payload.email}/>
+                    label="Email" color="secondary"   value={payload.email}   onChange={handleChange('email')}/>
 
                 <FormControl sx={classes.myTextField} variant="outlined" color='secondary' >
                     <InputLabel htmlFor="outlined-adornment-password">Password</InputLabel>
