@@ -172,7 +172,7 @@ export default function Register() {
                         id="outlined-adornment-password"
                         type={payload.showCPassword ? 'text' : 'password'}
                         value={payload.confirmPassword}
-                        onChange={handleChange('confirmPass')}
+                        onChange={handleChange('confirmPassword')}
                         endAdornment={
                             <InputAdornment position="end">
                                 <IconButton
