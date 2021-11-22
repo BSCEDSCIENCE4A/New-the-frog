@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
 import {
     Card,
     Grid,
@@ -6,7 +6,9 @@ import {
     Divider,
     Link
 } from '@mui/material'
-
+import CustomScroll from 'react-custom-scroll';
+import 'react-perfect-scrollbar/dist/css/styles.css';
+import PerfectScrollbar from 'react-perfect-scrollbar'
 const classes = {
     container: {
         display: 'flex',
@@ -82,10 +84,13 @@ const classes = {
 
 }
 export default function Explore() {
+
     return (
-        <Grid container sx={classes.container}>
-            <Card sx={classes.myCard}>
-                <Card sx={classes.myQuestion}>
+        <PerfectScrollbar>
+        <Grid container sx={classes.container}  >
+           
+            <Card sx={classes.myCard} >
+                <Card sx={classes.myQuestion} >
 
                     <Typography sx={classes.myTitle}>Explore</Typography>
                     <Divider sx={classes.myDivider} />
@@ -134,6 +139,8 @@ export default function Explore() {
                     </Link>
                 </Card>
             </Card>
+           
         </Grid >
+        </PerfectScrollbar>
     )
 }

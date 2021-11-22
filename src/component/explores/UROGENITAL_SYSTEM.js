@@ -7,6 +7,9 @@ import {
 } from '@mui/material'
 import { useNavigate } from 'react-router-dom';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack'
+import 'react-perfect-scrollbar/dist/css/styles.css';
+import PerfectScrollbar from 'react-perfect-scrollbar'
+
 const classes = {
     container: {
         display: 'flex',
@@ -112,6 +115,7 @@ export default function UROGENITAL_SYSTEM() {
         navigate('/main/explore/')
     };
     return (
+        <PerfectScrollbar>
         <Grid sx={classes.container} >
             <Card sx={classes.myCard}><b></b>
                 <Card sx={classes.myQuestion}>
@@ -162,6 +166,7 @@ export default function UROGENITAL_SYSTEM() {
                 </Card>
             </Card>
         </Grid >
+        </PerfectScrollbar>
     )
 }
 

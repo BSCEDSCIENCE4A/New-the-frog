@@ -82,9 +82,14 @@ export default function Main() {
                 navigate('/main/model/*')
                 break;
 
+            case 'toRefences':
+                navigate("/references/" )
+                break;
+
             default:
                 navigate('/main/*')
                 break;
+                
         }
     };
 
@@ -120,7 +125,7 @@ export default function Main() {
                     </Button>
                     <Button
                         variant="contained"
-                        onClick={() => handleNext('toAssesment')}
+                        onClick={() => handleNext('toRefences')}
                         sx={{ ...classes.myButton, background:'radial-gradient(circle, rgba(147,92,69,1) 9%, rgba(70,14,14,1) 100%)'}}>
                         <Typography sx={classes.myText}>
                             About

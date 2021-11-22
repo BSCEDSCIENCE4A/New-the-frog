@@ -7,7 +7,8 @@ import {
 } from '@mui/material'
 import { useNavigate } from 'react-router-dom';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack'
-
+import 'react-perfect-scrollbar/dist/css/styles.css';
+import PerfectScrollbar from 'react-perfect-scrollbar'
 const classes = {
     container: {
         display: 'flex',
@@ -113,9 +114,12 @@ export default function ANATOMICAL_TERMS() {
         navigate('/main/explore/')
     };
     return (
+        <PerfectScrollbar>
         <Grid sx={classes.container} >
             <Card sx={classes.myCard}><b></b>
                 <Card sx={classes.myQuestion}>
+              
+    
                     <IconButton sx={classes.myIcon} onClick={handleBack}>
                         <ArrowBackIcon sx={{ fontSize: 50 }} />
                     </IconButton>
@@ -141,10 +145,10 @@ export default function ANATOMICAL_TERMS() {
                     <Typography sx={classes.myText}><b>Median or Sagittal Plane:</b> divides the body into symmetrical right and left halves; includes the longitudinal axis and any dorso-ventral axis; any plane parallel to the sagittal is a parasagittal plane.</Typography>
                     <Typography sx={classes.myText}><b>Transverse Plane:</b> any plane at right angle to a longitudinal axis; hence, at right angles to sagittal and frontal planes; a cross-section.</Typography>
                     <Typography sx={classes.myText}><b>Frontal Plane:</b> any plane including a longitudinal and a transverse axis; hence, parallel to the front of the body (in man), or ventral surface (any bilateral animal); at the right angle to sagittal plane.</Typography>
-
-                </Card>
+          </Card>
             </Card>
         </Grid >
+        </PerfectScrollbar>
     )
 }
 

@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
+import { getAuth, signOut } from "firebase/auth";
 import ArrowBackIcon from '@mui/icons-material/ArrowBack'
 import {
     Button,
@@ -84,7 +85,16 @@ const classes = {
 export default function PreTest() {
     const navigate = useNavigate();
     const handleBack = () => {
-        navigate('/main/assesment/*')
+            navigate('/main/assesment/*')
+    };
+    const signout = () => {
+        
+        const auth = getAuth();
+        signOut(auth).then(() => {
+            navigate('/signIn/*')
+        }).catch((error) => {
+          // An error happened.
+        });
     };
 
     const [activeStep, setActiveStep] = useState(0);
@@ -111,11 +121,14 @@ export default function PreTest() {
             <Grid container sx={classes.container}>
                 <Card sx={classes.myCard}>
                 <IconButton sx={classes.myIcon} onClick={handleBack}>
-                        <ArrowBackIcon sx={{ fontSize: 50 }} /><Typography>Back</Typography>
+                        <ArrowBackIcon sx={{ fontSize: 50 }} />
                     </IconButton>
                     <Card sx={classes.myQuestion}>
                         <Typography sx={classes.myLabels}>YOUR SCORE IS {score} / {maxSteps}</Typography>
                     </Card>
+                    <IconButton sx={classes.myIcon} onClick={signout}>
+                        <Button>Logout</Button>
+                    </IconButton>
                 </Card>
             </Grid>)
     }
