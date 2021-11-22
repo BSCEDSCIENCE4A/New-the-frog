@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import {
     Card,
     Grid,
@@ -6,7 +6,6 @@ import {
     Divider,
     Link
 } from '@mui/material'
-import CustomScroll from 'react-custom-scroll';
 import 'react-perfect-scrollbar/dist/css/styles.css';
 import PerfectScrollbar from 'react-perfect-scrollbar'
 const classes = {

@@ -125,7 +125,7 @@ const signout = () => {
                     <Card sx={classes.myQuestion}>
                         <Typography sx={classes.myLabels}>YOUR SCORE IS {score} / {maxSteps}</Typography>
                     </Card>
-                       <Button sx={classes.myButtonu} onClick={handleBack}>Logout</Button>
+                       <Button sx={classes.myButtonu} onClick={signout}>Logout</Button>
                 </Card>
             </Grid>)
     }
