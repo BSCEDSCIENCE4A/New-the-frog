@@ -13,7 +13,8 @@ import {
 } from '@mui/material'
 import { useNavigate } from 'react-router-dom';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack'
-
+import 'react-perfect-scrollbar/dist/css/styles.css';
+import PerfectScrollbar from 'react-perfect-scrollbar'
 const classes = {
     container: {
         display: 'flex',
@@ -126,6 +127,7 @@ export default function DETERMINE_SEX() {
         createData('FOOT DIGITS', 'SEPARATE', 'WEBBED'),
     ];
     return (
+        <PerfectScrollbar>
         <Grid sx={classes.container} >
             <Card sx={classes.myCard}>
                 <Card sx={classes.myQuestion}>
@@ -167,6 +169,7 @@ export default function DETERMINE_SEX() {
                 </Card>
             </Card>
         </Grid >
+        </PerfectScrollbar>
     )
 }
 

@@ -9,9 +9,10 @@ import {
     Stepper,
     IconButton,
 } from '@mui/material'
-import questions from '../JSONFILES/questions.json'
+import questionss from '../JSONFILES/questionss.json'
 import CountDown from '../utils/countdown';
-
+import 'react-perfect-scrollbar/dist/css/styles.css';
+import PerfectScrollbar from 'react-perfect-scrollbar'
 const classes = {
     container: {
         display: 'flex',
@@ -23,8 +24,8 @@ const classes = {
         backgroundColor: '#3f3f3f'
     },
     myCard: {
-        minWidth: '60vw',
-        minHeight: '60vh',
+        minWidth: '50vw',
+        minHeight: '50vh',
         display: 'flex',
         position: 'relative',
         flexDirection: 'column',
@@ -35,7 +36,6 @@ const classes = {
         margin: 1
     },
     myQuestion: {
-        marginTop: 1,
         minWidth: '60vw',
         minHeight: '15vh',
         display: 'flex',
@@ -86,7 +86,7 @@ export default function PostTest() {
         navigate('/main/assesment/*')
     };
     const [activeStep, setActiveStep] = useState(0);
-    const maxSteps = questions.length;
+    const maxSteps = questionss.length;
     const [score, setScore] = useState(0);
     const handleScore = (isCorrect) => {
         switch (isCorrect) {
@@ -106,19 +106,21 @@ export default function PostTest() {
     }
     if (activeStep === maxSteps) {
         return (
+           
             <Grid container sx={classes.container}>
                 <Card sx={classes.myCard}>
                 <IconButton sx={classes.myIcon} onClick={handleBack}>
                         <ArrowBackIcon sx={{ fontSize: 50 }} /><Typography>Back</Typography>
                     </IconButton>
                     <Card sx={classes.myQuestion}>
-                        <Typography sx={classes.myLabels}>YOUR SCORE IS {score} / {maxSteps}</Typography>
+                        <Typography sx={classes.myLabels}>YOUR SCORE IS <br/> {score} / {maxSteps}</Typography>
                     </Card>
                 </Card>
             </Grid>)
     }
-    const test = questions[activeStep];
+    const test = questionss[activeStep];
     return (
+        <PerfectScrollbar >
         <Stepper activeStep={maxSteps} alternativeLabel>
             <Grid container sx={classes.container}>
                 <Grid sx={classes.myTitle}>
@@ -181,6 +183,7 @@ export default function PostTest() {
                 </Card>
             </Grid>
         </Stepper >
+        </PerfectScrollbar>
     )
 }
 

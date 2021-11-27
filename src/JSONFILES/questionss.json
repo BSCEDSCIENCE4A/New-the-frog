@@ -1,0 +1,274 @@
+[
+    {
+        "id": 1,
+        "question": "Which of the following describes BEST of the characteristic of a frog?",
+        "choice1": "It is massive and webbed.",
+        "choice2": "Bulky and rough",
+        "choice3": "The skin is moist and slippery",
+        "choice4": "Foot digits are separate.",
+        "answer": "The skin is moist and slippery"
+    },
+    {
+        "id": 2,
+        "question": "What is the third eyelid of the frog called?",
+        "choice1": "Outer membrane",
+        "choice2": "Nictitating membrane",
+        "choice3": "Eye bags",
+        "choice4": "Outer eyelid",
+        "answer": "Nictitating membrane"
+    },
+    {
+        "id": 3,
+        "question": "What is the reddish brown, conical shape, enclosed within a delicate membrane?",
+        "choice1": "Lungs",
+        "choice2": "Heart",
+        "choice3": "Pancreas",
+        "choice4": "Liver",
+        "answer": "Heart"
+    },
+    {
+        "id": 4,
+        "question": "What is the name of the fingerlike projections in the small intestine?",
+        "choice1": "Villi",
+        "choice2": "Colon",
+        "choice3": "Fat bodies",
+        "choice4": "Duodenum",
+        "answer": "Villi"
+    },
+    {
+        "id": 5,
+        "question": "What is the principal organ of digestion and absorption of digested food?",
+        "choice1": "Duodenum",
+        "choice2": "Large intestine",
+        "choice3": "Small intestine",
+        "choice4": "Gall Bladder",
+        "answer": "Small intestine"
+    },
+    {
+        "id": 6,
+        "question": "What organs located near the kidneys which secrete hormones?",
+        "choice1": "Liver",
+        "choice2": "Adrenal Glands",
+        "choice3": "Lungs",
+        "choice4": "Hear",
+        "answer": "Adrenal Glands"
+    },
+    {
+        "id": 7,
+        "question": "It pertains to the lower side or belly, away from the back and opposite to dorsal.",
+        "choice1": "Ventral",
+        "choice2": "Lateral",
+        "choice3": "Medial",
+        "choice4": "Distal",
+        "answer": "Ventral"
+    },
+    {
+        "id": 8,
+        "question": "How many fingers are on the front leg?",
+        "choice1": "Four",
+        "choice2": "Five",
+        "choice3": "Six",
+        "choice4": "Three",
+        "answer": "Four"
+    },
+    {
+        "id": 9,
+        "question": "A sharp teeth in the maxilla of a frog's mouth that function in holding captured prey.",
+        "choice1": "Vomerine teeh",
+        "choice2": "Tougue",
+        "choice3": "Maxillary Teeth",
+        "choice4": "Mouth Cavity",
+        "answer": "Maxillary Teeth"
+    },
+    {
+        "id": 10,
+        "question": "It is the bony case of the brain",
+        "choice1": "Skull",
+        "choice2": "Metacarpus",
+        "choice3": "Metatarsus",
+        "choice4": "Pterygoid",
+        "answer": "Skull"
+    },
+    {
+        "id": 11,
+        "question": "What are small bones forming the fingers?",
+        "choice1": "Phalange",
+        "choice2": "Prootic",
+        "choice3": "Carpus",
+        "choice4": "Orbital Cavity",
+        "answer": "Phalange"
+    },
+    {
+        "id": 12,
+        "question": "The chamber of a frog's heart that pumps blood out of the heart to the lungs and other parts of the body.",
+        "choice1": "Pulmonary Veins",
+        "choice2": "Right Atrium",
+        "choice3": "Left Atrium",
+        "choice4": "Ventricle",
+        "answer": "Ventricle"
+    },
+    {
+        "id": 13,
+        "question": "What plane that divides the body into symmetrical right and left halves, including the longitudinal axis and any dorso-ventral axis? ",
+        "choice1": "Dorsal",
+        "choice2": "Sagittal plane",
+        "choice3": "Transverse plane",
+        "choice4": "Frontal plane",
+        "answer": "Sagittal plane"
+    },
+    {
+        "id": 14,
+        "question": "How many stages of the life cycle of a frog?",
+        "choice1": "Six",
+        "choice2": "Five",
+        "choice3": "Four",
+        "choice4": "Three",
+        "answer": "Four"
+    },
+    {
+        "id": 15,
+        "question": "What bones forming the auditory region?",
+        "choice1": "Phalange",
+        "choice2": "Prootic",
+        "choice3": "Carpus",
+        "choice4": "Orbital Cavity",
+        "answer": "Prootic"
+    },
+    {
+        "id": 16,
+        "question": "What is the part of the brain that influences balance and equilibrium?",
+        "choice1": "Spinal Cord",
+        "choice2": "Cerebellum",
+        "choice3": "Medula Oblongata",
+        "choice4": "Cerebrum",
+        "answer": "Cerebellum"
+    },
+    {
+        "id": 17,
+        "question": "The posterior organ of the digestive system which stores undigested food.",
+        "choice1": "Duodenum",
+        "choice2": "Large intestine",
+        "choice3": "Pancreas",
+        "choice4": "Gall Bladder",
+        "answer": "Large intestine"
+    },
+    {
+        "id": 18,
+        "question": "What region that is away from the place of attachment or toward the periphery of extremities of the body, opposite of proximal?",
+        "choice1": "Anterior",
+        "choice2": "Lateral",
+        "choice3": "Medial",
+        "choice4": "Distal",
+        "answer": "Distal"
+    },
+    {
+        "id": 19,
+        "question": "It provide oxygen to frogs when they're not in the water.",
+        "choice1": "Nostril",
+        "choice2": "Skin ",
+        "choice3": "Lungs",
+        "choice4": "Mouth",
+        "answer": "Nostril"
+    },
+    {
+        "id": 20,
+        "question": "What are the two spongy organs called?",
+        "choice1": "Lungs",
+        "choice2": "Kidney",
+        "choice3": "Liver",
+        "choice4": "Small intestine",
+        "answer": "Lungs"
+    },
+    {
+        "id": 21,
+        "question": "What is the male sex cell or gametes?",
+        "choice1": "Oviducts",
+        "choice2": "Testes",
+        "choice3": "Sperm",
+        "choice4": "Ova or Eggs",
+        "answer": "Sperm"
+    },
+    {
+        "id": 22,
+        "question": "What is the posterior external opening called?",
+        "choice1": "Cloaca",
+        "choice2": "Mouth",
+        "choice3": "Anus",
+        "choice4": "Esophagus",
+        "answer": "Anus"
+    },
+    {
+        "id": 23,
+        "question": "What part of the brain is the center for some involuntary functions?",
+        "choice1": "Spinal Cord",
+        "choice2": "Cerebellum",
+        "choice3": "Medula Oblongata",
+        "choice4": "Cerebrum",
+        "answer": "Medula Oblongata"
+    },
+    {
+        "id": 24,
+        "question": "What is the Sac that stores bile?",
+        "choice1": "Duodenum",
+        "choice2": "Large intestine",
+        "choice3": "Pancreas",
+        "choice4": "Gall Bladder",
+        "answer": "Gall Bladder"
+    },
+    {
+        "id": 25,
+        "question": "It is the opening in the mouth that lead to tubes that connect to the middle ear to equalize air pressure.",
+        "choice1": "Vocal sac",
+        "choice2": "Eustachian tube openings",
+        "choice3": "Esophagus",
+        "choice4": "Trachea",
+        "answer": "Eustachian tube openings"
+    },
+    
+    {
+        "id": 26,
+        "question": "It is a small projections in the top of a frog’s mouth that function in holding and captured prey. ",
+        "choice1": "Vomerine teeth",
+        "choice2": "Maxillary teeth",
+        "choice3": "Nostril",
+        "choice4": "Mouth",
+        "answer": "Vomerine teeth"
+    },
+    {
+        "id": 27,
+        "question": "What is the tubes of a female frog's reproductive system that carry eggs from the ovaries to the cloaca?",
+        "choice1": "Oviducts",
+        "choice2": "Ovaries",
+        "choice3": "Sperm",
+        "choice4": "Ova or Eggs",
+        "answer": "Oviducts"
+    },
+    {
+        "id": 28,
+        "question": "It is the bony cup surrounding your eye.",
+        "choice1": "Eye socket",
+        "choice2": "Eyelids",
+        "choice3": "Nictitating membrane",
+        "choice4": "Maxillary",
+        "answer": "Eye socket"
+    },
+    {
+        "id": 29,
+        "question": "What part of the brain is associated with vision?",
+        "choice1": "Optic Lobes",
+        "choice2": "Cerebellum",
+        "choice3": "Olfactory lobe",
+        "choice4": "Cerebrum",
+        "answer": "Optic Lobes"
+    },
+    {
+        "id": 30,
+        "question": "What organ in the frog's circulatory system that makes, stores, and destroy blood cells?",
+        "choice1": "Kidney",
+        "choice2": "Spleen",
+        "choice3": "Stomach",
+        "choice4": "Urinary Bladder",
+        "answer": "Spleen"
+    }
+  
+]

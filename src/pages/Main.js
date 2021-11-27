@@ -96,7 +96,6 @@ export default function Main() {
                     <Typography sx={classes.myLabels}>The Frog</Typography>
                     <Button
                         variant="contained"
-                        color='btnA'
                         onClick={() => handleNext('toExplore')}
                         sx={{ ...classes.myButton, background: ' radial-gradient(circle, rgba(147,69,140,1) 9%, rgba(70,14,14,1) 100%)' }}>
                         <Typography sx={classes.myText}>
@@ -105,7 +104,6 @@ export default function Main() {
                     </Button>
                     <Button
                         variant="contained"
-                        color='btnA'
                         onClick={() => handleNext('toModel')}
                         sx={{ ...classes.myButton, background: 'radial-gradient(circle, rgba(41,119,135,1) 0%, rgba(5,20,79,1) 100%)' }}>
                         <Typography sx={classes.myText}>
@@ -114,7 +112,6 @@ export default function Main() {
                     </Button>
                     <Button
                         variant="contained"
-                        color='btnA'
                         onClick={() => handleNext('toAssesment')}
                         sx={{ ...classes.myButton, background: 'radial-gradient(circle, rgba(25,158,27,1) 9%, rgba(18,45,16,1) 100%)' }}>
                         <Typography sx={classes.myText}>
@@ -123,7 +120,6 @@ export default function Main() {
                     </Button>
                     <Button
                         variant="contained"
-                        color='btn'
                         onClick={() => handleNext('toAssesment')}
                         sx={{ ...classes.myButton, background:'radial-gradient(circle, rgba(147,92,69,1) 9%, rgba(70,14,14,1) 100%)'}}>
                         <Typography sx={classes.myText}>

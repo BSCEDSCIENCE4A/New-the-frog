@@ -11,6 +11,8 @@ import {
 import { useNavigate } from 'react-router-dom';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack'
 import frogCycle from '../images/unknown.png'
+import 'react-perfect-scrollbar/dist/css/styles.css';
+import PerfectScrollbar from 'react-perfect-scrollbar'
 
 const classes = {
     container: {
@@ -113,6 +115,7 @@ export default function LIFECYCLE_OF_A_FROG() {
         navigate('/main/explore/')
     };
     return (
+        <PerfectScrollbar>
         <Grid sx={classes.container} >
             <Card sx={classes.myCard}>
                 <Card sx={classes.myQuestion}>
@@ -186,6 +189,7 @@ export default function LIFECYCLE_OF_A_FROG() {
                 </Card>
             </Card>
         </Grid >
+        </PerfectScrollbar>
     )
 }
 

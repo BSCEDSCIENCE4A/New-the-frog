@@ -10,7 +10,8 @@ import {
     IconButton,
 } from '@mui/material'
 import questions from '../JSONFILES/questions.json'
-
+import 'react-perfect-scrollbar/dist/css/styles.css';
+import PerfectScrollbar from 'react-perfect-scrollbar'
 const classes = {
     container: {
         display: 'flex',
@@ -86,6 +87,9 @@ export default function PreTest() {
     const handleBack = () => {
         navigate('/main/assesment/*')
     };
+    const handleNext = () => {
+        navigate('/main/assesment/post-test/*')
+    };
 
     const [activeStep, setActiveStep] = useState(0);
     const maxSteps = questions.length;
@@ -114,13 +118,22 @@ export default function PreTest() {
                         <ArrowBackIcon sx={{ fontSize: 50 }} /><Typography>Back</Typography>
                     </IconButton>
                     <Card sx={classes.myQuestion}>
-                        <Typography sx={classes.myLabels}>YOUR SCORE IS {score} / {maxSteps}</Typography>
+                        <Typography sx={classes.myLabels}>YOUR SCORE IS<br/> {score} / {maxSteps}</Typography>
                     </Card>
+                    <Button sx={{textTransform: 'none',
+                        borderRadius: 20,
+                        minWidth: 'auto',
+                        minHeight: '1vh',
+                        margin: 2,
+                        color:' rgb(37,157,191)',
+                background: 'radial-gradient(circle, rgba(37,157,191,1) 0%, rgba(0,50,121,1) 100%)'}}
+                 onClick={handleNext}><Typography sx={{color:'#fff'}}>Proceed to Post-Test</Typography> </Button>
                 </Card>
             </Grid>)
     }
     const test = questions[activeStep];
     return (
+        <PerfectScrollbar>
         <Stepper activeStep={maxSteps} alternativeLabel>
             <Grid container sx={classes.container}>
                 <Grid sx={classes.myTitle}>
@@ -182,6 +195,7 @@ export default function PreTest() {
                 </Card>
             </Grid>
         </Stepper >
+        </PerfectScrollbar>
     )
 }
 

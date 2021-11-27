@@ -64,17 +64,15 @@ const classes = {
         margin: 2,
     }
 }
-export default function Assesment() {
+export default function AssesmenTwo() {
     const navigate = useNavigate();
     const handleBack = () => {
         navigate('/main/*')
     };
-    const handleNext = (id) => {
-        id === 'toPreTest' ? (
-            navigate('/main/assesment/pre-test/*')
-        ) : (
-            navigate('/main/assesment/post-test/*')
-        )
+    const handleNext = () => {
+        navigate('/main/assesment/post-Test/*')
+        
+  
     };
 
     return (
@@ -89,10 +87,10 @@ export default function Assesment() {
                     <Button
                         variant="contained"
                         color='btnA'
-                        onClick={() => handleNext('toPreTest')}
+                        onClick={handleNext}
                         sx={{...classes.myButton,background:'radial-gradient(circle, rgba(147,92,69,1) 9%, rgba(70,14,14,1) 100%)'}}>
                         <Typography sx={classes.myText}>
-                            Pre-Test
+                            Post-Test
                         </Typography>
                     </Button>
                    
