@@ -75,6 +75,7 @@ const classes = {
 export default function Register() {
 
     const [payload, setPayload] = useState({
+        email: '',
         password: '',
         confirmPassword: '',
         email: '',
